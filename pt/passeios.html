@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>BIUTUR</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+        <link rel="icon" type="image/jpg" href="../img/logo etepd.png"/>
+    </head>
+    <body data-aos-easing="ease" data-aos-duration="370" data-aos-delay="0">
+        <div id="home" class="initial">
+            <nav id="escondido" class="active">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <div id="toggle"></div>
+                    <script>
+                        const toggle = document.getElementById('toggle');
+                        toggle.onclick = function() {
+                            toggle.classList.toggle('active');
+                        }
+                    </script>
+                </label>
+                <label  id="logo" class="logo active ">
+                    <a href=""><img src="./img/logo.png" title="BIUTUR" class="logopd" alt="Logo BIUTUR"></a>
+                </label>
+                <label for="check" class="checkbtn z">
+                    <div class="click" id="toggle"></div>
+                    <script>
+                        const rem = document.querySelector('.click');
+                        rem.onclick = function() {
+                            toggle.classList.remove('active');
+                        }
+                    </script>
+                </label>
+                <div class="testar">
+                    <ul class="menu-urls">
+                        <li class="menu">
+                            <a title="Home" alt="Home" href="../index.html">HOME</a>
+                        </li>
+                        <li class="c pass active">
+                            <a title="Passeios" alt="Passeios" href="./passeios.html">PASSEIOS</a>
+                        </li>
+                        <li class="c pac">
+                            <a title="Pacotes" alt="Pacotes" href="./pacotes.html">PACOTES</a>
+                        </li>
+                        <li class="c cont">
+                            <a title="" href="">CONTATOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <nav id="escondidoTw" class="escondido active"></nav>
+        <br>
+        <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+        <script>
+            // todas as paginas ocupam toda a tela.
+            var pages = [].slice.call(document.querySelectorAll('.escondido'), 0);   
+            var checkCurrentPage = function () {
+                // obtendo posição das paginas.
+                var tops = pages.map(function (page) {
+                    var position = page.getBoundingClientRect();
+                    return position.top;
+            });
+
+            const istop = document.getElementById('escondido');
+            const istoptw = document.getElementById('escondidoTw');
+            const istoplogo = document.getElementById('logo');
+
+            var indexUnique = tops.indexOf(0);
+            if (indexUnique != -1) {
+                // unica pagina sendo exibida;
+                console.log(istoptw);
+                istop.classList.toggle('active');
+                istoptw.classList.toggle('active');
+                istoplogo.classList.toggle('active');
+
+                console.log([pages[indexUnique]]);
+                return;
+            } else {
+                    var prevs = tops.filter(function (top) {
+
+                        istop.classList.remove('active');
+                        istoptw.classList.remove('active');
+                        istoplogo.classList.remove('active');
+                        console.log(istoptw);
+                        return top < 0;
+                    });
+                
+                    var prev = pages[prevs.length - 1];
+                    var next = pages[prevs.length];
+                    console.log([ prev, next ]);
+                }
+            }
+
+
+
+            window.addEventListener("scroll", checkCurrentPage);
+            window.addEventListener("resize", checkCurrentPage);
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/jquery-migrate.js"></script>
+        <script type="text/javascript" src="../js/slick.min.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/gsap.min.js"></script>
+        <script type="text/javascript" src="../js/ScrollTrigger.min.js"></script>
+    </body>
+</html>
