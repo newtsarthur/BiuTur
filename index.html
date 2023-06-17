@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     </head>
-    <body data-aos-easing="ease" data-aos-duration="370" data-aos-delay="0">
+    <body class="items" data-aos-easing="ease" data-aos-duration="370" data-aos-delay="0">
         <div id="home" class="initial">
             <nav id="escondido" class="active">
                 <input type="checkbox" id="check">
@@ -95,12 +95,12 @@
         <br>
         <br>
         <div class="c what">
-            <img src="./img/c (1).gif"/>
+            <img class="homtext" src="./img/c (1).gif"/>
             <div class="c text">
                 <h1 class="c om">Quem é <br>BiuTur?</h1>
                 <h1 class="c off">Quem é BiuTur?</h1>
 
-                <li>
+                <li class="textt">
                     <a>Atuando no mercado desde 2010, a Biu Tur Turismo vem se consolidado cada vez mais no mercado do Estado de Pernambuco e região nordeste.
                         A empresa tem como fundador  o empresário Severino Gonçalves de Santana e conta com diversos serviços de destaque nas áreas de turismo transfer, City Tour e pacotes turisticos.
                         Conheça Biu Tur e viva experiências únicas em Pernambuco. Especialista em passeios personalizados, é o profissional ideal para viajantes que buscam conhecer melhor da cultura local, além de todas as cores e sabores desde paraíso brasileiro.
@@ -459,5 +459,34 @@
         <script type="text/javascript" src="./js/ScrollTrigger.min.js"></script>
         <script type="text/javascript" src="./js/privatepolicy.js"></script>
         <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
+        <script type="text/javascript">
+            // Selecione todas as classes que você deseja tornar responsivas
+            const classesResponsivas = document.querySelectorAll('');
+
+            // Função para tornar as classes responsivas
+            function tornarResponsivo() {
+            // Verifique cada elemento da classe responsiva
+            classesResponsivas.forEach(elemento => {
+                // Modifique as propriedades de estilo conforme necessário para tornar o elemento responsivo
+                // Exemplo: defina largura ou margens proporcionais, ajuste o tamanho da fonte, etc.
+                elemento.style.width = '100%';
+                elemento.style.margin = '0 auto';
+                // Adicione outras modificações de estilo conforme necessário
+
+                // Exemplo adicional: se você tiver um elemento de imagem, pode torná-lo responsivo definindo a largura máxima para 100%
+                if (elemento.tagName === 'IMG') {
+                elemento.style.maxWidth = '100%';
+                elemento.style.height = 'auto';
+                }
+            });
+            }
+
+            // Chame a função para tornar as classes responsivas quando a página for carregada
+            window.addEventListener('load', tornarResponsivo);
+
+            // Chame a função novamente quando a janela for redimensionada (para garantir a responsividade contínua)
+            window.addEventListener('resize', tornarResponsivo);
+
+        </script>
     </body>
 </html>
