@@ -2185,6 +2185,25 @@ a.c.wats.tw:after {
         padding-left: 200px;
         padding-right: 200px;
     }
+    .cc-nb-title-container {
+        left: 0!important;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+    .cc-nb-text {
+        left: 0!important;
+        right: 0!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .cc-nb-buttons-container {
+
+        padding-left: 0!important;
+        justify-content: center!important;
+        align-items: center!important;
+        display: flex!important;
+    }
 
 }
 @media (max-width: 567px) {
