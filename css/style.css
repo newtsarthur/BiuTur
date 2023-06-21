@@ -2201,6 +2201,9 @@ a.c.wats.tw:after {
         height: 217px;
         width: 359px;
     }
+    h1.c.off {
+        font-size: 2rem;
+    }
 }
 @media (max-width: 480px) {
     .c.logobd {
