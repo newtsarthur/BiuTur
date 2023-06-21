@@ -239,6 +239,9 @@ nav.active{
     margin: auto;
     line-height: 90px;
 }
+.menu-urls.active {
+    top: 172px
+}
 .menu-urls li {
     padding-left: 50px;
     padding-right: 50px;
@@ -1784,8 +1787,10 @@ a.c.wats.tw:after {
 .c.wats:hover::before
 {
     background-color: var(--main-greenshaddow);
-
 }
+
+/* nav.active */
+
 @media (max-width: 1325px) {
     html, body {
         width: 100%;
@@ -1902,6 +1907,13 @@ a.c.wats.tw:after {
         border-radius: 20px;
     }
 }
+@media (max-width: 900px) {
+    .c.what {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
 @media (max-width: 858px) {
     .logo.active .logopd {
         width: 274px;
@@ -1987,6 +1999,9 @@ a.c.wats.tw:after {
     }
     #check:checked ~ .testar {
         left: 40%;
+    }
+    #check:checked ~ .testar.active {
+        top: 190px;
     }
     #check:checked ~ .click {
         left: 0;
@@ -2163,7 +2178,77 @@ a.c.wats.tw:after {
         width: 400px;
     }
 }
+@media (max-width: 630px)
+{
+    .c.what {
+        display: block;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
 
+}
 @media (max-width: 567px) {
+    .c.what {
+        display: block;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .vid {
+        width: 417px;
+        height: 320px;
+    }
+    .c.logobd {
+        height: 217px;
+        width: 359px;
+    }
+}
+@media (max-width: 480px) {
+    .c.logobd {
+        height: 161px;
+        width: 306px;
+    }
+    .c.what {
+        display: block;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    a {
+        font-size: 12px
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x:hidden;
+        overflow-y:hidden;
+    }
+    .vid {
+        width: 386px;
+        height: 303px;
+    }
+}
+@media (max-width: 380px) {
+    .vid {
+        width: 355px;
+        height: 271px;
+    }
+}
 
+@media (max-width: 350px) {
+    .c.what {
+        display: block;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .c.logobd {
+        height: 112px;
+        width: 223px;
+    }
+}
+@media (max-width: 350px) {
+    .c.what {
+        display: block;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
