@@ -38,8 +38,8 @@
                         }
                     </script>
                 </label>
-                <div class="testar">
-                    <ul class="menu-urls">
+                <div id="menuid" class="testar">
+                    <ul id="menuidtw" class="menu-urls">
                         <li class="menu active">
                             <a title="Home" alt="Home" href="">HOME</a>
                         </li>
@@ -408,6 +408,9 @@
             const istop = document.getElementById('escondido');
             const istoptw = document.getElementById('escondidoTw');
             const istoplogo = document.getElementById('logo');
+            const istoptoggle = document.getElementById('menuid'); //toggle menu
+            const istoptoggletw = document.getElementById('menuidtw');
+
 
             var indexUnique = tops.indexOf(0);
             if (indexUnique != -1) {
@@ -416,6 +419,8 @@
                 istop.classList.toggle('active');
                 istoptw.classList.toggle('active');
                 istoplogo.classList.toggle('active');
+                istoptoggle.classList.toggle('active');
+                istoptoggletw.classList.toggle('active');
 
                 // console.log([pages[indexUnique]]);
                 return;
@@ -425,6 +430,9 @@
                         istop.classList.remove('active');
                         istoptw.classList.remove('active');
                         istoplogo.classList.remove('active');
+                        istoptoggle.classList.remove('active');
+                        istoptoggletw.classList.remove('active');
+
                         // console.log(istoptw);
                         return top < 0;
                     });
