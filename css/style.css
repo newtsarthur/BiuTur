@@ -2226,11 +2226,33 @@ a.c.wats.tw:after {
         width: 386px;
         height: 303px;
     }
+    #dite {
+        right: -210px;
+    }
+    #smile {
+        left: -205px;
+    }
 }
 @media (max-width: 380px) {
     .vid {
         width: 355px;
         height: 271px;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x:hidden;
+        overflow-y:hidden;
+    }
+    #dite {
+        right: -166px;
+    }
+    #smile {
+        left: -159px;
+    }
+    h1.c.off {
+        font-size: 2rem;
     }
 }
 
@@ -2250,5 +2272,12 @@ a.c.wats.tw:after {
         display: block;
         padding-left: 25px;
         padding-right: 25px;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x:hidden;
+        overflow-y:hidden;
     }
 }
