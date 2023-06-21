@@ -1842,8 +1842,10 @@ a.c.wats.tw:after {
         left: 24px !important;
     }
     .c.what.tw {
-        padding-left: 250px;
-        padding-right: 0px;
+        /* padding-left: 250px; */
+        /* padding-right: 0px; */
+        padding-left: 500px;
+        padding-right: 500px;
     }
     .c.om {
         display: none;
@@ -2085,7 +2087,8 @@ a.c.wats.tw:after {
     }
     .c.what.c3po {
         display: block;
-        padding-left: 193px;
+        padding-left: 300px;
+        padding-right: 300px;
         margin: 0;
     }
     .c.what.c3po li {
@@ -2162,7 +2165,8 @@ a.c.wats.tw:after {
         padding-left: 159px;
     }
     .c.what.c3po {
-        padding-left: 159px;
+        padding-left: 300px;
+        padding-right: 300px;
     }
     .c.container.d ul h3 {
         margin-left: -5px;
@@ -2177,11 +2181,20 @@ a.c.wats.tw:after {
         height: 250px;
         width: 400px;
     }
+    .c.what img {
+        height: 250px;
+        width: 250px;
+        margin-left: 0px;
+    }
 }
 @media (max-width: 630px)
 {
     .c.what {
         display: block;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .c.what.c3po {
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -2209,6 +2222,10 @@ a.c.wats.tw:after {
 @media (max-width: 567px) {
     .c.what {
         display: block;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .c.what.c3po {
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -2254,6 +2271,15 @@ a.c.wats.tw:after {
     #smile {
         left: -205px;
     }
+    .c.what.qh {
+        display: block;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .c.what.c3po {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 @media (max-width: 380px) {
     .vid {
@@ -2275,6 +2301,15 @@ a.c.wats.tw:after {
     }
     h1.c.off {
         font-size: 2rem;
+    }
+    .c.what.qh {
+        display: block;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .c.what.c3po {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
@@ -2301,5 +2336,14 @@ a.c.wats.tw:after {
         padding: 0;
         overflow-x:hidden;
         overflow-y:hidden;
+    }
+    .c.what.qh {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .c.what.c3po {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
