@@ -65,29 +65,10 @@
         <nav id="escondidoTw" class="escondido active"></nav>
         <body class="slide">
             <div class="sliderclass">
-                <!-- <img src="./img/BiuTurIMG (1).jpg"/> -->
-                <img src="./img/BiuTurIMG (2).jpg"/>
-                <img src="./img/BiuTurIMG (2).jpg"/>
-                <img src="./img/BiuTurIMG (2).jpg"/>
-                <img src="./img/BiuTurIMG (2).jpg"/>
-                <img src="./img/BiuTurIMG (2).jpg"/>
-
-                <!-- <img src="./img/BiuTurIMG (3).jpg"/>
-                <img src="./img/BiuTurIMG (4).jpg"/>
-                <img src="./img/BiuTurIMG (5).jpg"/>
-                <img src="./img/BiuTurIMG (6).jpg"/>
-                <img src="./img/BiuTurIMG (7).jpg"/>
-                <img src="./img/BiuTurIMG (8).jpg"/>
-                <img src="./img/BiuTurIMG (9).jpg"/>
-                <img src="./img/BiuTurIMG (10).jpg"/>
-                <img src="./img/BiuTurIMG (12).jpg"/>
-                <img src="./img/BiuTurIMG (13).jpg"/>
-                <img src="./img/BiuTurIMG (14).jpg"/> -->
-                <!-- <section>
-                    <a class="none" href="https://www.instagram.com/lego_bulls/" target="_blank">
-                        <img class="silder" src="./img/c (5).jpg"/>
-                    </a>
-                </section> -->
+                <img src="./img/home1.jpg"/>
+                <img src="./img/home2.jpg"/>
+                <img src="./img/home4.jpg"/>
+                <img src="./img/home6.jpg"/>
             </div>
         </body>
         <br>
@@ -414,15 +395,12 @@
 
             var indexUnique = tops.indexOf(0);
             if (indexUnique != -1) {
-                // unica pagina sendo exibida;
-                // console.log(istoptw);
                 istop.classList.toggle('active');
                 istoptw.classList.toggle('active');
                 istoplogo.classList.toggle('active');
                 istoptoggle.classList.toggle('active');
                 istoptoggletw.classList.toggle('active');
 
-                // console.log([pages[indexUnique]]);
                 return;
             } else {
                     var prevs = tops.filter(function (top) {
@@ -433,13 +411,11 @@
                         istoptoggle.classList.remove('active');
                         istoptoggletw.classList.remove('active');
 
-                        // console.log(istoptw);
                         return top < 0;
                     });
                 
                     var prev = pages[prevs.length - 1];
                     var next = pages[prevs.length];
-                    // console.log([ prev, next ]);
                 }
             }
 
